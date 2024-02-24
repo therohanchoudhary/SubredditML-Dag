@@ -1,0 +1,379 @@
+id,title,score,upvote_ratio,selftext,num_comments,author,created_utc,url,over_18,edited,spoiler,stickied
+1ay4z23,[D] ICLR Plot Twists,86,0,"Saw a few ICLR results that seem like a surprise to the community:
+
+* Mamba ➡️ Reject
+* V-JEPA ➡️ Reject
+* MetaGPT ➡️ Accept (Oral) as discussed [here](https://www.reddit.com/r/MachineLearning/comments/1axbm0f/d_metagpt_grossly_misreported_baseline_numbers/)
+
+What other accepts/rejects have raised a few eyebrows?",19,hzmehrdad,2024-02-23 16:37:43,https://www.reddit.com/r/MachineLearning/comments/1ay4z23/d_iclr_plot_twists/,False,False,False,False
+1ayab0e,[D] Modern Dimensionality Reduction,78,0,"Hey All,
+
+I’m familiar with the more classical techniques of dimensionality reduction like SVD, PCA, and factor analysis. But are there any modern techniques or maybe some tricks that people have learned over the years that they would like to share. For context, this would be for tabular data. Thanks!",40,MuscleML,2024-02-23 20:08:25,https://www.reddit.com/r/MachineLearning/comments/1ayab0e/d_modern_dimensionality_reduction/,False,False,False,False
+1ayog60,[D] What Are the Fundamental Drawbacks of Mamba Compared to Transformers?,61,0,"Hello!
+
+I've been pondering this question for some time. To clarify, I'm not referring to aspects like ""it hasn't been tested extensively,"" ""its scalability is uncertain,"" or ""there's a lack of industry infrastructure."" Instead, I'm interested in understanding the core differences between the transformer and Mamba architectures, specifically how these differences may place Mamba at a disadvantage compared to Transformers.
+
+Best regards!
+
+**Edit:**
+
+From what I can understand from your answers, Transformers are ""better"" in the following sense compared to Mamba in that:
+
+* Transformers does not compress the input.
+* Transformers can handle non-sequential data.
+* Transformer might be better to handle instructions that is located at the end of an input.
+
+**Edit 2:**
+
+To sum things up:
+
+* **Transformers:** More compute for larger contexts but access to more information albeit possibly some useless information
+* **Mamba:** Less compute for larger contexts but access to less information and therefore risks missing out on information.",32,Alarmed-Profile5736,2024-02-24 07:11:08,https://www.reddit.com/r/MachineLearning/comments/1ayog60/d_what_are_the_fundamental_drawbacks_of_mamba/,False,False,False,False
+1ayiq45,[D] When writing ML software - how do you use TDD?,38,0,"Please let me know if there is a better sub for this.
+
+Test-driven-development.
+
+I’ve been working on ML software for a while now and I feel like i have spurts of wanting to get better at following TDD and trying to apply that to more nuanced ML use cases.
+
+One thing i’ve noticed over the years is requirements and design can be hazy for our work - a lot of what I do at least starts off with the simplest design and then we rely on iteration and a robust evaluation framework to justify if certain improvements will be implemented (why implement anything if it doesn’t improve performance). In these types of prototyping scenarios, TDD can be a huge time killer and a bit useless until you nail down your design.
+
+Still, it’s pretty great when requirements are clear, so i’m trying to get better at including it in my arsenal.
+
+What are your thoughts on TDD and how/when do you use it?",9,Due-Function4447,2024-02-24 02:05:15,https://www.reddit.com/r/MachineLearning/comments/1ayiq45/d_when_writing_ml_software_how_do_you_use_tdd/,False,False,False,False
+1ay49tp,[D] Mamba: The Easy Way,37,0,"Mamba looks like an exciting new language model architecture, and it took me awhile to understand the paper in full! The model employs a lot of tough concepts (S4, GPU memory, parallel scans, etc.), so I've written a blogpost about my understanding of Mamba's big ideas and contributions, with an eye toward making it as beginner-friendly as possible.
+
+Link: [https://jackcook.com/2024/02/23/mamba.html](https://jackcook.com/2024/02/23/mamba.html)
+
+I hope this is helpful, and I'd love to discuss any additional questions or points of clarification. Let me know what you think!",0,jackcook,2024-02-23 16:09:49,https://www.reddit.com/r/MachineLearning/comments/1ay49tp/d_mamba_the_easy_way/,False,False,False,False
+1ay5zka,[R] Beyond A*: Better Planning with Transformers via Search Dynamics Bootstrapping - Meta 2024 - Searchformer - Significantly outperforms baselines that predict the optimal plan directly with a 5-10× smaller model size and a 10× smaller training dataset!,23,0,"Paper: [https://arxiv.org/abs/2402.14083](https://arxiv.org/abs/2402.14083) 
+
+Abstract:
+
+>While Transformers have enabled tremendous progress in various application settings, such architectures still lag behind traditional symbolic planners for solving complex decision making tasks. In this work, we demonstrate how to train Transformers to solve complex planning tasks and present **Searchformer, a Transformer model that optimally solves previously unseen Sokoban puzzles 93.7% of the time, while using up to 26.8% fewer search steps than standard A∗ search.** Searchformer is an encoder-decoder Transformer model trained to predict the search dynamics of A∗. This model is then fine-tuned via expert iterations to perform fewer search steps than A∗ search while still generating an optimal plan. In our training method, A∗'s search dynamics are expressed as a token sequence outlining when task states are added and removed into the search tree during symbolic planning. In our ablation studies on maze navigation, we find that **Searchformer significantly outperforms baselines that predict the optimal plan directly with a 5-10× smaller model size and a 10× smaller training dataset.** We also demonstrate how Searchformer scales to larger and more complex decision making tasks like Sokoban with improved percentage of solved tasks and shortened search dynamics. 
+
+https://preview.redd.it/fhn5bsklbdkc1.jpg?width=1028&format=pjpg&auto=webp&s=bbb8d726ba74d046023a6c6827249fa602c6eff1
+
+https://preview.redd.it/n5a54uklbdkc1.jpg?width=521&format=pjpg&auto=webp&s=619d31cf68977f98213422566f7c075aa1a2007b
+
+https://preview.redd.it/ztmf8rklbdkc1.jpg?width=1144&format=pjpg&auto=webp&s=700c9cf543b09b85b07d296a314d0ef6b451c1d0
+
+https://preview.redd.it/poragwklbdkc1.jpg?width=936&format=pjpg&auto=webp&s=18435580f179a63d72305aa1d9c4511f1ecf70c5",0,Singularian2501,2024-02-23 17:17:07,https://www.reddit.com/r/MachineLearning/comments/1ay5zka/r_beyond_a_better_planning_with_transformers_via/,False,False,False,False
+1ay4mbu,[R] LongRoPE: Extending LLM Context Window Beyond 2 Million Tokens - Microsoft 2024,20,0,"Paper: [https://arxiv.org/abs/2402.13753](https://arxiv.org/abs/2402.13753) 
+
+Abstract:
+
+>Large context window is a desirable feature in large language models (LLMs). However, due to high fine-tuning costs, scarcity of long texts, and catastrophic values introduced by new token positions, current extended context windows are limited to around 128k tokens. This paper introduces LongRoPE that, for the first time, extends the context window of **pre-trained LLMs to an impressive 2048k tokens, with up to only 1k fine-tuning steps at within 256k training lengths, while maintaining performance at the original short context window**. This is achieved by three key innovations: (i) we identify and exploit two forms of non-uniformities in positional interpolation through an efficient search, providing a better initialization for fine-tuning and enabling an 8x extension in non-fine-tuning scenarios; (ii) we introduce a progressive extension strategy that first fine-tunes a 256k length LLM and then conducts a second positional interpolation on the fine-tuned extended LLM to achieve a 2048k context window; (iii) we readjust LongRoPE on 8k length to recover the short context window performance. Extensive experiments on LLaMA2 and Mistral across various tasks demonstrate the effectiveness of our method. **Models extended via LongRoPE retain the original architecture with minor modifications to the positional embedding, and can reuse most pre-existing optimizations.** 
+
+https://preview.redd.it/siuxi9gf2dkc1.jpg?width=1109&format=pjpg&auto=webp&s=c21f2879f3bdafafb1e9f0a97ca303b90c96d18f
+
+https://preview.redd.it/vtpxmcgf2dkc1.jpg?width=1188&format=pjpg&auto=webp&s=9837d7ed191130bbf853c7455f06cb16cd704756
+
+https://preview.redd.it/uapbcbgf2dkc1.jpg?width=1115&format=pjpg&auto=webp&s=aa2f5f41dc0a32968c45144dfea21e1541d089c2",0,Singularian2501,2024-02-23 16:23:29,https://www.reddit.com/r/MachineLearning/comments/1ay4mbu/r_longrope_extending_llm_context_window_beyond_2/,False,False,False,False
+1ayrfpt,[R] LoRA+: Efficient Low Rank Adaptation of Large Models,16,0,"**Paper**: [https://arxiv.org/abs/2402.12354](https://arxiv.org/abs/2402.12354)
+
+**Code**: [https://github.com/nikhil-ghosh-berkeley/loraplus](https://github.com/nikhil-ghosh-berkeley/loraplus)
+
+**Abstract**:
+
+>In this paper, we show that Low Rank Adaptation (LoRA) as originally  introduced in Hu et al. (2021) leads to suboptimal finetuning of models  with large width (embedding dimension). This is due to the fact that  adapter matrices A and B in LoRA are updated with the same learning  rate. Using scaling arguments for large width networks, we demonstrate  that using the same learning rate for A and B does not allow efficient  feature learning. We then show that this suboptimality of LoRA can be  corrected simply by setting different learning rates for the LoRA  adapter matrices A and B with a well-chosen ratio. We call this proposed  algorithm **LoRA+**. In our extensive experiments, LoRA+ improves performance (1-2 % improvements) and finetuning speed (up to ∼ 2X SpeedUp), at the same computational cost as LoRA.",0,SunsetOneSix,2024-02-24 10:28:28,https://www.reddit.com/r/MachineLearning/comments/1ayrfpt/r_lora_efficient_low_rank_adaptation_of_large/,False,False,False,False
+1ayddpy,[P] Advice regarding MoE and Mamba implementations,11,0,"Hi everyone,
+
+I'm diving into my Master's Thesis and need some guidance. The core of my work is to linearize a complex function that's riddled with memory effects. While the Transformer architecture has been explored in literature, I'm considering taking a fresh angle with either a Mamba architecture or spicing up the Transformer with a MoE (Mixture of Experts) approach. Moe-Mamba is also on the table.
+
+The thing is: it's the first time I'm actually working with these architectures, so I don't really know where to start in order to implement them in real code.
+
+Where should I learn about these architectures more? Can you also suggest some code implementations (I don't think there are libraries yet) for these architectures?
+
+PS: I know I still have to study a lot about these topics so don't judge my stupid questions pls, that is why I'm asking for advice, I want to learn! :)",4,PaleAle34,2024-02-23 22:13:20,https://www.reddit.com/r/MachineLearning/comments/1ayddpy/p_advice_regarding_moe_and_mamba_implementations/,False,False,False,False
+1ay569a,[R] OpenCodeInterpreter: Integrating Code Generation with Execution and Refinement - 2024 - HumanEval of 92.7! GPT-4 CodeInterpreter has only 88.0!,11,0,"Paper: [https://arxiv.org/abs/2402.14658](https://arxiv.org/abs/2402.14658) 
+
+Github: [https://opencodeinterpreter.github.io/](https://opencodeinterpreter.github.io/) 
+
+Abstract:
+
+>The introduction of large language models has significantly advanced code generation. However, open-source models often lack the execution capabilities and iterative refinement of advanced systems like the GPT-4 Code Interpreter. To address this, we introduce **OpenCodeInterpreter, a family of open-source code systems designed for generating, executing, and iteratively refining code.** Supported by Code-Feedback, a dataset featuring 68K multi-turn interactions, OpenCodeInterpreter integrates execution and human feedback for dynamic code refinement. Our comprehensive evaluation of OpenCodeInterpreter across key benchmarks such as HumanEval, MBPP, and their enhanced versions from EvalPlus reveals its exceptional performance. Notably, OpenCodeInterpreter-33B achieves an accuracy of 83.2 (76.4) on the average (and plus versions) of HumanEval and MBPP, closely rivaling GPT-4's 84.2 (76.2) and further elevates to 91.6 (84.6) with synthesized human feedback from GPT-4. **OpenCodeInterpreter brings the gap between open-source code generation models and proprietary systems like GPT-4 Code Interpreter.** 
+
+https://preview.redd.it/56p1vhv26dkc1.jpg?width=752&format=pjpg&auto=webp&s=f1f47a4d25a05ff4a41e46eadce82ca51c1784cb",0,Singularian2501,2024-02-23 16:45:44,https://www.reddit.com/r/MachineLearning/comments/1ay569a/r_opencodeinterpreter_integrating_code_generation/,False,False,False,False
+1aysm4o,[D] Learning the mathematical expressions ,5,0,"I need to get better with reading algorithmic expressions and how to expand or simplify them, specifically for ML. Anyone know any resources? ",0,Inside-Ad-9118,2024-02-24 11:42:49,https://www.reddit.com/r/MachineLearning/comments/1aysm4o/d_learning_the_mathematical_expressions/,False,False,False,False
+1ay8aes,[P] Gemma 7B with Tensor RT (>500k tok/s batch-8) tutorial,4,0,"Hey all - we just put out a guide for running Gemma 7B with Tensor RT. You can get some much better performance out of it with Tensor RT.
+
+&#x200B;
+
+Check it out: [https://docs.mystic.ai/docs/deploy-gemma7b-tensorrt-llm](https://docs.mystic.ai/docs/deploy-gemma7b-tensorrt-llm)
+
+&#x200B;
+
+Hope it's useful!",0,paulcjh,2024-02-23 18:46:08,https://www.reddit.com/r/MachineLearning/comments/1ay8aes/p_gemma_7b_with_tensor_rt_500k_toks_batch8/,False,False,False,False
+1ay6aq6,[D] Approximating known distributions (up to a normalization factor) by a decoder-only part of a VAE.,3,0,"Hi all,
+
+Please feel free to delete if this is a beginner question.
+
+I'm reading a bunch of papers on how to learn and sample distributions using neural networks and have some questions. Everything described below is a summary of a couple of papers I read where people tried to do this thing, but I'd like to keep the post self-contained.
+
+\------------------------------------------------------------------------------------------------------------------------------
+
+**Introduction:** I have the following question. Imagine you have a distribution **P(x)=F(x)/N**, where we know **F(x)** and can evaluate it at will, but we don't know the normalization factor **N**. The question is -- how can we learn generate samples for the distribution **P(x)**, with **x** being elements of some high dimensional space? One option would be to do Markov chain Monte-Carlo, but I am interested in another direction. You will immediately recognize similarities to variational inference and VAE's but please bear with me.
+
+**Setup:** What we could do is propose a decoder network but *without an encoder* with which we will try to optimize a model distribution **M\_v(x)**. We start to sample a **z** from **M(z)** where **M(z)** is known and is for example a simple Gaussian. Next, **z** is an input to a neural network **NN(z)=v** that produces the parameters of the model distribution. So important to note here that the decoder network does not produce the actual elements **x** but produces weights for a model distribution. For example, if **M\_v(x)** is a Gaussian mixture in the components of **x** and the parameters **v** are then the necessary means, variances and mixture weights.
+
+**The goal:** Learn appropriate weights in the network such that the graphical model: "" **M\_v(x)** =sample **M(z) ->** get params **v** \-**>** sample **x** from **M\_v(x) ""** approximates sampling the distribution **P(x)** that we wanted to learn.
+
+**Method:** We start by writing the KL divergence between the two distributions as **KL**(**M\_v(x)| F(x)/N)= E\_{M\_v} \[ log(M\_v(x)) - log ( F(x) ) \] + log(N).** To optimize our decoder network we essentially put a variational inequality on **log(N)** as follows:
+
+**log(N) < E\_{M\_v} \[ log(M\_v(x)) - log ( F(x) ) \] (Expression 1)**
+
+The only tunable parameters in our setup are the weights of the neural network that produces **NN(z)=v** , and so the goal is to tune the weights in such a way that the RHS is minimized.
+
+**Questions:**
+
+**1)** This looks very similar to variational inference, but the main difference is that now we actually know the target distribution **F(x)** (up to normalization) and try to learn variational approximations to it. Whereas in most tutorials and explanations on variational inference you don't know the distribution **F(x)** but have some data **{x}** that is distributed according to it, and hence you also need an encoder network. The first question is therefore: does this ""decoder-only"" VAE to approximate known target distributions have a name?
+
+**2)** So I understand the setup and the theory, but I'm not sure how to actually evaluate the RHS of **Expression 1.**
+
+Let's say that **M\_v(x)** is a Gaussian mixture. In that case it's impossible to compute at least one of the two terms analytically. So how do you actually do your backprop in PyTorch in this case? Do you actually have to sample the distribution **M\_v(x)** for real, generate some samples **{x}** and then use the generated samples to approximate **E\_{M\_v} \[ log(M\_v(x)) - log ( F(x) ) \] ?**",1,Invariant_apple,2024-02-23 17:28:47,https://www.reddit.com/r/MachineLearning/comments/1ay6aq6/d_approximating_known_distributions_up_to_a/,False,False,False,False
+1ayvnno,"[P] Understanding, Using, and Finetuning Gemma",3,1,,0,seraschka,2024-02-24 14:21:37,https://lightning.ai/lightning-ai/studios/understanding-using-and-finetuning-gemma,False,False,False,False
+1aysghl,[D] Can the Mamba Model Overcome Its Copying Challenge Through Smart Context Compression?,3,0,"I've been delving into the nuances of the Mamba architecture and its method of context compression, which seems to offer a smart alternative to the way traditional Transformers handle context by considering all of it. However, one noted drawback of the Mamba approach is its apparent difficulty in tasks that require copying entire sequences of texts. This limitation can be attributed to the fact that Mamba models only access a compressed version of the input, potentially hindering their ability to reconstruct it fully in the output. This is in contrast to Transformers that always access all of it.
+
+Given this, I've been wondering whether there's a workaround for Mamba models in such copy scenarios. For instance, let's consider a Mamba model designed to compress context into around ""six"" words. In a task where the model is asked to print the sequence ""Hello World! How are you!"", could the model not strategically select portions of the input across multiple iterations to achieve a perfect copy? For example:
+
+1. In the first pass, the model focuses on ""Print out the following sequence: Hello"", using its compressed context capacity to grasp the instruction and initiate the copying task.
+2. Following the output of ""Hello"", the model could then, in subsequent iterations, compress inputs like ""Print out the following sequence: ... 'World'... Output: Hello..."", allowing it to continue the task by appending the next words in sequence.
+
+This iterative approach, which would involve selectively compressing context to include task instructions, the current focus word, and the most recent output, seems like it could enable a Mamba architecture to effectively replicate the copying capabilities of a Transformer model, despite its inherent compression.
+
+Could such a method theoretically allow Mamba models to match Transformers in tasks that involve copying text sequences?
+
+I'm eager to hear thoughts about this. Best regards!",2,Alarmed-Profile5736,2024-02-24 11:33:01,https://www.reddit.com/r/MachineLearning/comments/1aysghl/d_can_the_mamba_model_overcome_its_copying/,False,False,False,False
+1aypqzh, [D] ML Internship for an undergrad?,3,0,"
+So I am currently a senior in university studying software engineering. Is it realistic to expect to get any position as a ML intern? 
+
+To those who were able to do it, what kind of projects did you have in your portfolio? I have taken courses and created minor projects but nothing major so far, will those help me hired?
+
+Also, if anyone is looking for a ML/DS intern, I can send you my CV lol. I'd just really like to get my foot in the door and start gaining experience. I will be doing master's after graduation.",0,Critical-Strategy914,2024-02-24 08:36:13,https://www.reddit.com/r/MachineLearning/comments/1aypqzh/d_ml_internship_for_an_undergrad/,False,False,False,False
+1ayiwdw,"[P] Box Detection in Warehouse using Vision Based ML Engineering (Yolov8, FastAPI, Docker)",3,0," I'm thrilled to showcase my first end-to-end ML engineering project for Image Object Detection that I recently developed, leveraging MLOps principles to streamline the deployment process and ensure scalability and reliability.  
+
+The project focuses on boxed container detection in warehouse conveyor belts.
+
+Here's a brief overview of the key components and methodologies:  
+
+
+🔍 **Data Preparation and Model Training** - I began by downloading the dataset from [Roboflow](https://www.linkedin.com/company/roboflow-ai/) and trained the YOLOv8 model on the train set using transfer learning. Through rigorous validation and testing, the model achieved an accuracy (mean Average Precision or mAP) of over 90%.
+
+🛠️ **Software Engineering with FAST API** - Next, I transitioned to software engineering aspects, where I developed a FastAPI web application to serve the trained model to end users. The application includes a user-friendly interface for uploading conveyor belt images and receiving predictions with labeled boxes. Web UI image attached below.
+
+📦 **Deployment with Docker Containerization** - To facilitate easy deployment and accessibility, I containerized the FastAPI application using Docker. This allows end users to seamlessly install and run the application without worrying about dependencies or environment setup.
+
+For more details into how this project was developed, I urge you to check out the flowchart below :
+
+https://preview.redd.it/4wjliokmzfkc1.png?width=2048&format=png&auto=webp&s=3fc7c2f22db0ff60a4978ea84aa7d1688c8cdf77
+
+
+As next steps, I would be working on adding some unit and integration tests, as well as implementing monitoring and automated feedback mechanisms to trigger model training, so as to avoid data and model drift.  
+
+
+Docker Image with instruction on how to run the object detection web app - [https://hub.docker.com/r/agpsuai23/box\_detection\_image](https://hub.docker.com/r/agpsuai23/box_detection_image)  
+
+
+Code Repository for this project - [https://github.com/abhijeetgupta23/Box-Detection-in-Warehouse-using-Vision-Based-ML-Engineering](https://github.com/abhijeetgupta23/Box-Detection-in-Warehouse-using-Vision-Based-ML-Engineering)",0,Snoo_72181,2024-02-24 02:13:37,https://www.reddit.com/r/MachineLearning/comments/1ayiwdw/p_box_detection_in_warehouse_using_vision_based/,False,False,False,False
+1ayah63,[D] ai explainability tools,3,0," I'm working on training a computer vision model for detecting custom objects. I've been looking for tools to help understand AI models, and haven't come across much.
+
+Google has a paid toolset:
+
+[https://cloud.google.com/explainable-ai](https://cloud.google.com/explainable-ai)
+
+And this one is free:
+
+[https://shap-lrjball.readthedocs.io/en/latest/generated/shap.DeepExplainer.html](https://shap-lrjball.readthedocs.io/en/latest/generated/shap.DeepExplainer.html)
+
+What other tools are people using?",2,_meatMuffin,2024-02-23 20:15:20,https://www.reddit.com/r/MachineLearning/comments/1ayah63/d_ai_explainability_tools/,False,False,False,False
+1ay7nvr,[D] System Design Interview - Design Chatbot or Search Engine like Perplexity.,3,0,"Hi Folks,
+
+I have a system design interview coming up for ML role at a FAANG. I have started playing with Gen AI only recently and read up on foundational concepts - LLM, model selection, RAGs, fine tuning, etc. But want to get a solid understanding of overall system specifically for gen AI powered apps.
+
+Curious if anyone can point to resources o r explain end-to-end system design for a typical Chatbot or a search engine (like Perplexity).",3,Grouchy-Ad6094,2024-02-23 18:21:30,https://www.reddit.com/r/MachineLearning/comments/1ay7nvr/d_system_design_interview_design_chatbot_or/,False,False,False,False
+1aytd82,"[R] Working on improving fairness of a machine learning framework, would like to understand which fairness metrics are and are not differentiable? How to verify?",2,1,"Right now I am looking at 6 different fairness metrics: Statistical Parity, Predictive Parity, Predictive Equality, Equal Opportunity, Equalized Odds and Conditional Use Accuracy Equality. I have found one paper ([https://openreview.net/pdf?id=x-mXzBgCX3a](https://openreview.net/pdf?id=x-mXzBgCX3a)) that says Observational Fairness Metrics are not differentiable (which includes Statistical Parity) but doesn't explain why.",0,Intrepid_Ad_5904,2024-02-24 12:26:40,https://www.reddit.com/r/MachineLearning/comments/1aytd82/r_working_on_improving_fairness_of_a_machine/,False,False,False,False
+1ay7wt7,[D] [P] intent-pilot: A Desktop Operating Agent,2,0,"**library:** `pip install intent-pilot`  
+**Repo link:** [https://github.com/askui/intent-pilot](https://github.com/askui/intent-pilot)  
+Hey!
+
+  
+We built a Desktop agent which can perform end-end automation. The core idea is based Set-of-Mark (SoM) + GPT-4v for localization. This library is along the same lines of self-operating-computer or open-interpreter but we felt our object detection is better for the UI domain. Also, we improved the UI experience by providing notifications across platforms and also fixed the keyboard layout issue - For example, Pyautogui messes up special characters in German keyboard.  
+
+
+Let me know what you guys think. I built it in a week and my colleague helped at the end. So, your feedback will be appreciated.  
+
+
+Our object detection model is behind an API but we have released a global key (available in the repo). Have a nice weekend!  
+
+
+**Note:** This is like giving access to a baby. It surprises you mostly but can also shock you. I suggest you close important tabs before it clicks on the wrong thing  ;)",0,Outlandish_MurMan,2024-02-23 18:31:11,https://www.reddit.com/r/MachineLearning/comments/1ay7wt7/d_p_intentpilot_a_desktop_operating_agent/,False,False,False,False
+1ayxpgu,[P] [D] [R] Alphazero in Code space,2,1,"**Task Description:**
+
+A reward equal to ""difficulty"" is given upon emission of acceptable (python) solution to ANY competitive programming task in a corpus. Maximize reward.
+
+**Task Detail:**
+
+a large corpus of e.g. Codeforces tasks is readily available.
+
+have access to python interpreter, or any other tool.
+
+no llm pretraining
+
+**Design Detail:**
+
+No natural language involved. specifically, acm tasks are not descibed in langauge, but only with input-output pairs.
+
+Intention is for an agent to learn structure in code-world.
+
+This reward is preliminary, for it's human biased. Real intention is challenge models' ability to excel in a task that potentially requires inductive knowledge (in any representation)
+
+**Design Space:**
+
+I'd projected this task in a way similar to Alpha-Zero-Go. Major difference is lack of concise and uniform desciption of state & action.
+
+Design philosophy is, whatever correct answer be, predicting next token is a wrong way for computers to learn programming.
+
+My current intuition is that I 'perturb' my program and learn to play this 'perturb game' to maximize aforementioned reward. yet code space is massive.
+
+**Major issues:**
+
+Is tree-search ample? i.e. will a DAG search outperform tree asyptotically?
+
+how to utilize my 80G on A100? or memory in general?
+
+Where is the boundary of search constraints so as not to violate 'the bitter lesson' yet practical?
+
+**Belief:**
+
+The most logical parts of human intelligence (e.g. the part for programming) are not fundamentally logical, thus legitimating a fuzzy-searchy approach.
+
+Many minor issues are unclear to me at the moment. Will follow up upon my shrinking design space and during implementation.
+
+**Craving for your thoughts on this.**",0,AdvancedGrab9662,2024-02-24 15:51:11,https://www.reddit.com/r/MachineLearning/comments/1ayxpgu/p_d_r_alphazero_in_code_space/,False,False,False,False
+1ayx6xf,[P] Text classification using LLMs,3,0,"Hi, I am looking for a solution to do supervised text classification for 10-20 different classes spread across more than 7000 labelled data instances. I have the data in xlsx and jsonl formats, but can be converted to any format required easily. I've tried the basic machine learning techniques and deep learning also but I think LLMs would give higher accuracy due to the transformer architecture. I was looking into function calling functionality provided by Gemini but it is a bit complicated. Is there any good framework with easy to understand examples that could help me do zero shot, few shot and fine tuned training for any LLM? A Colab session would be appreciated. I have access to Colab pro also if required. Not any other paid service, but can spend upto $5 (USD). This is a personal research project so budget is quite tight. I'd really appreciate if you could direct me to any useful resources for this task. Any LLM is fine.
+
+I've also looked into using custom LLMs via ollama and was able to set up 6 bit quantized versions of mistral 13b on the Colab instance but couldn't use it to classify yet. Also, I think Gemini is my best option here due to limited amount of VRAM available. Even if I could load a high end model temporarily on Colab, it will take a long time for me with a lot of trial and errors to get the code working and even after that, it'll take a long time to predict the classes. Maybe we can use a subset of the dataset for this purpose, but it'll still take a long time and Colab has a limit of 12h",7,Shubham_Garg123,2024-02-24 15:29:40,https://www.reddit.com/r/MachineLearning/comments/1ayx6xf/p_text_classification_using_llms/,False,False,False,False
+1aywyq2,How to showcase what I’m doing? [discussion] ,0,0,I’m learning ML but the thing is I don’t know how to showcase what i am doing and sometimes it feels like I’m just learning and learning but when i look backward all are messed up and my working files are all hidden somewhere and I won’t look back and that’s why it feels like i am learning nothing can anyone help? And also can anyone tell me what should i post on linked in? Please 🥺,3,SatisfactionSea7994,2024-02-24 15:19:44,https://www.reddit.com/r/MachineLearning/comments/1aywyq2/how_to_showcase_what_im_doing_discussion/,False,False,False,False
+1aywkcd,[D] ECAI?,1,0,How competitive and top-tier is ECAI compared to A* tier ones?,0,BigDreamx,2024-02-24 15:02:25,https://www.reddit.com/r/MachineLearning/comments/1aywkcd/d_ecai/,False,False,False,False
+1ayubsq,"[D] [P] Need Guidance related to Gesture recognition task. 
+",1,1,"
+Hi, I am student currently in my final year of my graduation, need some guidance related to final year project.
+
+We were assigned a project student classroom gesture detection with catch to to be able to detect gesture as well as whose geature it is. We have prepared dataset over Gesture mainly (handraising, reading and writing), the problem we are facing is how to use 2 different models at ones, face recognition and gesture detections. To be able to genrate final report of students with their gesture count and engagement report.
+
+For face detection we are considering deepface and for gesture detection we are considering Yolo v8 model.
+
+Any suggestions would be helpful. Thanks for your time. ",0,Ali_6200,2024-02-24 13:17:44,https://www.reddit.com/r/MachineLearning/comments/1ayubsq/d_p_need_guidance_related_to_gesture_recognition/,False,False,False,False
+1aygi68,[D] Exploring Ideas: Advancements in End-to-End Multi-Task Text-to-Speech,1,1,"Hi!
+
+I got curious about speaker diarization these days and looked into what people are using like combinations of whisper with pyannote etc. And since I'm not in research I would to hear from you what are some ideas that people are exploring in end-to-end multi-task text-to-speech.
+
+I see a lot of work in multi-lingual, low-resource text-to-speech, but not that much about multi-task that goes beyond multi-language translation.
+
+I tried to extend Whisper to perform speaker diarization but it didn't work well. Especially since there is no way to keep the speaker identification from one segment to another (Whisper only works on 30s audio). So I was thinking, if you want to extend Whisper to new tasks, you are not only limited by tasks that should be contained in 30s audio clips, but also by the fact that fine-tuning a model by introducing a new special token for this specific task makes the fine-tuning harder.
+
+So I was wondering, are there any promising end-to-end multi-task text-to-speech research ideas?",0,ReinforcedKnowledge,2024-02-24 00:22:28,https://www.reddit.com/r/MachineLearning/comments/1aygi68/d_exploring_ideas_advancements_in_endtoend/,False,False,False,False
+1ay56e6,[D] My thoughts on model merging,1,0,"Hey folks,
+
+I've been fascinated by model merging and have been playing with it recently. I wanted to understand how it works and these are my findings.
+
+My understanding of how model merging works:
+
+**Task Vectors -** The core idea in model merging is derived from the concept of task vectors. The main idea here is that once you have finetuned a model on a specific task, if you subtract the weights from the base model, it gives you a ""vector"" which captures the modifications needed for the task.
+
+**Why Model Merging Works** \- The intuition here is that if you have different models that are good at different things, you can combine different task vectors (such as taking an average in different ways) to produce a new model that is good at both tasks. For example, if model A is good at math, and model B is good at programming, you can merge the models to product a model that is good at both.
+
+**Many Approaches to Merge Models** \- All model merging approaches work by combining the task vectors in different ways. Some approaches include Linear Interpolation (LERP), Spherical Linear Interpolation (SLERP), TIES, and DARE.
+
+**More Art then Science -** Like everything in LLM world, these approaches are a bit like black box. While they have some intuitive reasoning, it seems like this is also more of an art then exact science.
+
+I am curious what you guys think of this? How have your experiences been working with merged models? Is merging mostly trial and error, and are there some recommended best practices?
+
+I have put together a step by step guide along with relevant code and tools I used to do the merge in a blog post [here](https://matilabs.ai/2024/02/13/model-merge-slerp/).",1,bhavya6187,2024-02-23 16:45:54,https://www.reddit.com/r/MachineLearning/comments/1ay56e6/d_my_thoughts_on_model_merging/,False,False,False,False
+1ay9bnk,Unable to specify GPU usage in VLLM code [D],0,0,"I am facing difficulties in specifying GPU usage for different models for LLM inference pipeline using vLLM. Specifically, I have 4 RTX 4090 GPUs available, and I aim to run a LLM with a size of 42GB on 2 RTX 4090 GPUs (\~48GB) and a separate model with a size of 22GB on 1 RTX 4090 GPU(\`24GB).This is my code for running 42GB model on two GPUs.
+
+    from vllm import LLM
+    llm = LLM(model_name, max_model_len=50, tensor_parallel_size=2) 
+    output = llm.generate(text)
+
+However, I haven't found a straightforward method within the VLLM library to specify which GPU should be used for each model.
+
+&#x200B;",0,Humza0000,2024-02-23 19:28:30,https://www.reddit.com/r/MachineLearning/comments/1ay9bnk/unable_to_specify_gpu_usage_in_vllm_code_d/,False,False,False,False
+1aynuye,[R] Dataset Requirements ,0,0,Need help to find out OMOP(Observational Medical Outcome Partnership) free dataset for an academic project.,0,Ok-Art5200,2024-02-24 06:34:39,https://www.reddit.com/r/MachineLearning/comments/1aynuye/r_dataset_requirements/,False,False,False,False
+1ay8t52,Tensorflow setup [P],0,0,"Hi all,
+
+I am currently trying to get a google gemma model running on my mac(M1+). And I keep runnign to a hardware instruction is illegal error. Can anyone suggest a way around this?
+
+I have tried every online tutorial that htere is on the tensorflow for apple silicon setup. For example:
+
+pip install tensorflow-metal and pip install tensorflow-macos etc. And I keep getting the error that it could not find the relevant package. I have tried this with every variant of environments too. Does anyone know how to get around this assuming I would like to run the model locally and not on google colab?
+
+Thanks",0,PalpitationClear1747,2024-02-23 19:07:15,https://www.reddit.com/r/MachineLearning/comments/1ay8t52/tensorflow_setup_p/,False,False,False,False
+1aysmq8,[D] Getting 'Graph execution error' in model.fit(),0,0,"I'm working on Binary Image segmentation problem, I want to prepare my data and apply augmentation using **ImageDataGenerator** and **.flow()** method. But in **flow\_from\_directory()** method it is possible to add **color\_mode**='rgb' or 'grayscale' and **target\_size** = (128,128). How can I apply this parameters using **flow()** method. I want to train Unet model but in **model.fit****()** part it gives InvalidArgumentError: Graph execution error.  How can I solve this problem?
+
+**Here is my code:**
+
+data\_gen\_args = dict(rotation\_range = 20,  
+zoom\_range = 0.2,  
+fill\_mode = 'reflect',  
+width\_shift\_range = 0.2,  
+height\_shift\_range = 0.2,  
+horizontal\_flip = True,  
+vertical\_flip = True,  
+validation\_split=0.2)  
+image\_datagen = ImageDataGenerator(\*\*data\_gen\_args)  
+mask\_datagen = ImageDataGenerator(\*\*data\_gen\_args)  
+seed = 1  
+image\_datagen.fit(images, augment=True, seed=seed)  
+mask\_datagen.fit(masks, augment=True, seed=seed)  
+image\_generator = image\_datagen.flow(image\_dataset,  
+y=None,  
+batch\_size=16,  
+seed = seed,  
+subset = 'training')  
+mask\_generator = mask\_datagen.flow(mask\_dataset,  
+y=None,  
+batch\_size=16,  
+seed = seed,  
+subset = 'training')  
+\# combine generators into one which yields image and masks  
+train\_generator = zip(image\_generator, mask\_generator)  
+
+
+val\_img = image\_datagen.flow(image\_dataset,  
+y=None,  
+batch\_size=16,  
+seed = seed,  
+subset = 'validation')  
+val\_msk = mask\_datagen.flow(mask\_dataset,  
+y=None,  
+batch\_size=16,  
+seed = seed,  
+subset = 'validation')  
+val\_generator = zip(val\_img, val\_msk)
+
+\-----------------------------------------------------------------------------------------------------
+
+unet\_history = unet\_model.fit(train\_generator,  
+batch\_size = 16,  
+verbose=1,  
+epochs=50,  
+steps\_per\_epoch=len(image\_generator),  
+validation\_data=val\_generator,  
+validation\_steps = len(val\_img),  
+callbacks=callbacks\_list)",1,NailaBaghir,2024-02-24 11:43:54,https://www.reddit.com/r/MachineLearning/comments/1aysmq8/d_getting_graph_execution_error_in_modelfit/,False,False,False,False
+1aycrcy,[D][R],0,0,"Model deployment multi tenant
+
+How do you make a decision whether to deploy or not based on model metrics across tenants? What statistics do you use? For some tenants there is improvement of metric for others there’s marginal decrease and some others significant decrease, how to decide on deployment ? Are there any papers in this area? ",0,Evening-Moment-6589,2024-02-23 21:47:42,https://www.reddit.com/r/MachineLearning/comments/1aycrcy/dr/,False,False,False,False
+1ayelvj,[D] How does Information Extraction happen in LLMs so quickly?,0,0,"I am an AI researcher and I know a lot about the inner workings of ChatGPT. But each time I am using it, I am totally surprised how it delivers very complex answers on niche topics so extremely quickly, in almost no time. It just seems to (i) know everything and (ii) have thought through everything upfront of any question on any topic.
+
+How does it work? Are there any recent theoretical explanations about this, such as filter banks, etc?",17,CodingButStillAlive,2024-02-23 23:02:51,https://www.reddit.com/r/MachineLearning/comments/1ayelvj/d_how_does_information_extraction_happen_in_llms/,False,False,False,False
+1ayahp3,[P] Haven't tried the 120B models unquantized yet? Look no further...,0,0,"You can try 120B models at [https://www.projectatlantis.ai](https://www.projectatlantis.ai) Honest feedback appreciated. 
+
+https://preview.redd.it/7iqgla0w7ekc1.png?width=958&format=png&auto=webp&s=c550334dd33a62e9f52ba0ae39875f259feadbbd",4,Growth4Good,2024-02-23 20:15:54,https://www.reddit.com/r/MachineLearning/comments/1ayahp3/p_havent_tried_the_120b_models_unquantized_yet/,False,False,False,False
+1aycg75,[D] Why backprop?,0,0,"Isn't there something more efficient? Is there an artificial alternative to the concept of ""Neurons that fire together wire together""? A single multimodal neural network, with one group of inputs for text, another group of inputs for video, and another one for audio. And maybe a group of output neurons for text and another for audio. All connected to a 3D liquid state machine. Learning at the same time as receiving information, by adjusting the strength of the connections between neurons that are close to each other and ""fire together"".",25,st4s1k,2024-02-23 21:34:57,https://www.reddit.com/r/MachineLearning/comments/1aycg75/d_why_backprop/,False,False,False,False
+1aynbo9,Can anyone help i wanna become machine learning engineer [discussion],0,0,I am 2 year IT student really wanna become a machine learning engineer but due to vast availability of contents i get frustrated and skip all the time and by doing that I’m not going anywhere that would be se helpful if anyone can help🥺😊 . Any free course or any path i can follow? And do i need a good DSA knowledge to become a machine leaning engineer? Or data scientist? ,8,SatisfactionSea7994,2024-02-24 06:03:14,https://www.reddit.com/r/MachineLearning/comments/1aynbo9/can_anyone_help_i_wanna_become_machine_learning/,False,False,False,False
+1ayc8jr,[D] Can AI surpass human knowledge?,0,0,"Are Neural Neutworks limited by the training data? I imagine we train a neural network to generate results as close as possible to the training data, it can never generate something new, something better. Yes I know about the emergent properties, but still, my question is: Isn't the current strategy for training neural networks creating a ceiling, a plateau, an impediment to their potential?
+
+Edit:
+By creating a loss function based on the difference between output and input, we impose the output's gravitation towards the training data. Being better, exceeding the existing knowledge, means getting further from the training data, which would increase the error and punish invention/discovery. I'd argue that current emergent properties are just overlaps between existing fields of information, and they're not pushing the boundaries.",13,st4s1k,2024-02-23 21:26:07,https://www.reddit.com/r/MachineLearning/comments/1ayc8jr/d_can_ai_surpass_human_knowledge/,False,False,False,False
